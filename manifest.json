@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "POF",
+    "version": "1.0",
+    "description": "POF.",
+    "page_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://www.pof.com/*",
+          "http://www.pof.com/*"
+        ],
+        "js": [
+          "content_script.js"
+        ]
+      }
+    ],
+
+    "permissions" : [
+        "tabs",
+        "http://*/*"
+            ]
+}
